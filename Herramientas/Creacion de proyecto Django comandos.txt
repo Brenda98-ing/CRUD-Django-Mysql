@@ -1,0 +1,39 @@
+DJANGO CON MYSQL
+
+Fuente: https://www.django-rest-framework.org/tutorial/quickstart/
+otra fuente: https://docs.djangoproject.com/en/4.0/topics/install/
+
+Vamos instalar entorno virtual
+virtualenv -p python3 env
+
+Vamos a activar el entorno virtual
+.env\Scripts\activate
+
+Vamos a equipar nuestro proyecto instalando lo necesario:
+pip install django
+pip install djangorestframework
+pip install mysqlclient
+pip install MySQL-python
+
+Vamos a crear nuestro proyecto django
+django-admin startproject Proyecto API
+
+Vamos a iniciar nuestra app dentro de nuestro proyecto django
+django-admin startapp app
+
+
+NOTA: Si queremos ingresar nuevamente al entorno virtual solo colocar el comando:
+env\Scripts\activate
+
+NOTA: si tengo mi base de datos omitir los comandos migrate 
+NOTA: Revisar si la direccion de la app es correcta (Provoca errores)
+
+PARA OBTENER MODELO DE BASE DE DATOS YA CREADA VAMOS A correr manage
+Luego pegaremos el siguiente codigo: python Proyecto_API/manage.py inspectdb
+
+Registramos nuestro modelo que salio con el comando que pusimos
+Registramos nuestros modelos en admin
+
+Vamos a verificar que la conexion sea exitosa con python manage.py migrate OJO PUEDE QUE ESTE COMANDO PIERDA INFO- INVESTIGAR ANTES DE AGREGAR
+
+Vamos a correr nuestro servicio: python manage.py runserver

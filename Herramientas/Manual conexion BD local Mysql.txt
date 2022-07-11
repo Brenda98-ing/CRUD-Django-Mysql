@@ -1,0 +1,16 @@
+Si queremos conectartanos a Mysql localmente
+
+Debemos acceder al cliente desde cmd:
+C:\xampp\mysql\
+
+OJO: Si no se reconoce el comando , se agregar la ruta C:\Program Files\MySQL\MySQL Server 8.0\bin” a las variables de entorno en Path
+
+Conectar con el servidor
+mysql -h nombre_servidor -u nombre_usuario -p
+con parametros:
+mysql -h localhost -u root -p
+
+git pull origin brenda
+git .add
+git commit 
+git push 

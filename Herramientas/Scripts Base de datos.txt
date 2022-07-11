@@ -1,0 +1,19 @@
+Nota: El archivo sistema_MBD-Prototipo.dmm - Se abre con aplicación moon modeler
+
+CREATE TABLE tiposdispositivo (
+    tiposdispositivo_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre_de_tipo VARCHAR(200)
+);
+
+CREATE TABLE statusDispositivo (
+  statusDispositivo_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  descripcion varchar(200)
+);
+
+CREATE TABLE lecturas(
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  dispositivo_id INT,
+  tiposdispositivo_id INT,
+  potenciaActual DECIMAL,
+  timestamp TIMESTAMP
+);
