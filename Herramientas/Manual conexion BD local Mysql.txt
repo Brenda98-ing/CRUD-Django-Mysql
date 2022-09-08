@@ -10,6 +10,8 @@ mysql -h nombre_servidor -u nombre_usuario -p
 con parametros:
 mysql -h localhost -u root -p
 
+show databases;
+
 git pull origin brenda
 git .add
 git commit 
